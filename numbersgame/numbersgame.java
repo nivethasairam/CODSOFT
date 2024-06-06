@@ -73,12 +73,12 @@ public class numbersgame {
         return attempts + 1; // Return maxAttempts + 1 to indicate failure to guess within allowed attempts
     }
 
-    public static int promptUserGuess(Scanner scanner) {
+    public static int promptUserGuess(Scanner obj2) {
         while (true) {
         	//System.out.println("LET'S START");
             System.out.print("ENTER YOUR GUESS: ");
             try {
-                return Integer.parseInt(scanner.nextLine());
+                return Integer.parseInt(obj2.nextLine());
             } catch (NumberFormatException e) {
                 System.out.println("OOPS IT IS  INVALID");
                 System.out.println("ENTER ONLY NUMBERS BETWEEN 1 TO 100 ");
